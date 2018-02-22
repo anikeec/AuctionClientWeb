@@ -25,20 +25,25 @@
     </a>
   </header>
 <p></p>
-<form name="publish">
-  <table width="400" border="0">
+<table id="painting" width="1000" border="0">
     <tbody>
+    </tbody>
+ </table>
+<form name="publish"> 
+ <p> </p>  	
+  <table width="1000" border="0">
+    <tbody>    
       <tr>
         <td>Lot ID</td>
-        <td><input type="text" name="textfield" class="inputfield" id="lot_id"></td>
+        <td><input type="text" name="textfield" class="inputfield" id="lot_id" readonly="readonly"></td>
       </tr>
       <tr>
         <td>Lot name</td>
-        <td><input type="text" name="textfield" class="inputfield" id="lot_name"></td>
+        <td><input type="text" name="textfield" class="inputfield" id="lot_name" readonly="readonly"></td>
       </tr>
       <tr>
         <td>Start price</td>
-        <td><input type="text" name="textfield" class="inputfield" id="start_price"></td>
+        <td><input type="text" name="textfield" class="inputfield" id="start_price" readonly="readonly"></td>
       </tr>
       <tr>
         <td>Current rate</td>
@@ -46,15 +51,15 @@
       </tr>
       <tr>
         <td>Current winner ID</td>
-        <td><input type="text" name="textfield" class="inputfield" id="winner_id"></td>
+        <td><input type="text" name="textfield" class="inputfield" id="winner_id" readonly="readonly"></td>
       </tr>
       <tr>
         <td>Observers</td>
-        <td><input type="text" name="textfield" class="inputfield" id="observers"></td>
+        <td><input type="text" name="textfield" class="inputfield" id="observers" readonly="readonly"></td>
       </tr>
       <tr>
         <td>Time last update</td>
-        <td><input type="text" name="textfield" class="inputfield" id="time_last_update"></td>
+        <td><input type="text" name="textfield" class="inputfield" id="time_last_update" readonly="readonly"></td>
       </tr>
       <tr>
         <td>User ID</td>
@@ -62,12 +67,16 @@
       </tr>
       <tr>
         <td>Time to finish</td>
-        <td><input type="text" name="textfield" class="inputfield" id="time_to_finish"></td>
+        <td><input type="text" name="textfield" class="inputfield" id="time_to_finish" readonly="readonly"></td>
       </tr>
 	  <tr>
-        <td></td>
-        <td><input type="button" name="button" id="button_connect" value="Connect">
-			<input type="button" name="button" id="button_new_rate" value="Increase price">
+        <td>
+        	<input type="button" name="button" id="button_connect" value="Connect">        	
+        </td>
+        <td>
+        	<input type="button" name="button" id="button_load_lots" value="Load lots" disabled=true>
+        	<input type="button" name="button" id="button_subscribe" value="Subscribe" disabled=true>
+			<input type="button" name="button" id="button_new_rate" value="Increase price" disabled=true>
 		  </td>
       </tr>
     </tbody>
